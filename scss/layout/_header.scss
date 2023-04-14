@@ -1,0 +1,87 @@
+@use "../foundation/global" as *;
+
+
+.header {
+    width: 100%;
+
+    &-inner {
+        width: 100%;
+        height: 100%;
+        padding: 40px 5.1%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mq("sp") {
+            padding: 32px 20px;
+        }
+    }
+
+    &-logoArea {
+        width: 124px;
+        height: 33px;
+
+        @include mq("sp") {
+            width: 105px;
+            height: 27px;
+        }
+
+        &__icon {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    &-ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @include mq("sp") {
+            display: none;
+        }
+    }
+    &-list {
+
+        &__item {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: $primary-white;
+                transform: scale(0, 1);
+                transform-origin: right top;
+                transition: transform .3s;
+            }
+
+            &:hover {
+             
+                &::after {
+                    transform-origin: left top;
+                    transform: scale(1, 1);
+                }
+            }
+        }
+        
+        &__btn {
+            width: 120px;
+            height: 38px;
+            border-radius: 30px;
+
+            &--text {
+                font-size: 14px;
+            }
+        }
+    }
+}

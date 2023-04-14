@@ -1,0 +1,157 @@
+@use "../foundation/global" as *;
+
+.fv {
+   
+    &-inner {
+        padding-top: 62px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1080px) {
+            display: block;
+        }
+        @include mq("sp") {
+            padding-top: 10px;
+        }
+    }
+
+    &-left {
+
+        &__title {
+            font-size: 53px;
+            line-height: 72px;
+            font-weight: 700;
+
+            @include mq("tab") {
+                text-align: center;
+            }
+
+            @include mq("sp") {
+                width: 100%;
+                max-width: 305px;
+                font-size: 42px;
+                line-height: 48px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+
+    &-right {
+        max-width: 400px;
+
+        @media (max-width: 1080px) {
+            margin: 0 auto;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: 400;
+
+            @include mq("tab") {
+                text-align: center;
+            }
+
+            @include mq("sp") {
+                max-width: 300px;
+                margin: 20px auto 0;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+
+        &__btn {
+            width: 175px;
+            height: 51px;
+            margin-top: 30px;
+            border-radius: 30px;
+
+            @include mq("tab") {
+                margin: 30px auto 0;
+            }
+
+            @include mq("sp") {
+                display: none;
+            }
+
+            &--spOnly {
+                width: 214px;
+                height: 47px;
+                border-radius: 42px;
+                margin: 36px auto 0;
+                display: none;
+
+                @include mq("sp") {
+                    display: grid;
+                }
+            }
+        }
+    }
+}
+
+//スライダー部分
+  /*
+  IE11対策
+  ----------------------------*/
+  _:-ms-lang(x)::-ms-backdrop,
+  .fv-slider {
+    display: -ms-grid;
+    overflow: hidden;
+    will-change: transform;
+  }
+  /*----------------------------*/
+  
+  .fv-slider__wrap {
+    display: flex;
+    overflow: hidden;
+    height: 405px;
+    margin-top: 70px;
+    pointer-events: none;
+
+    @include mq("sp") {
+        height: 205px;
+        margin-top: 40px;
+    }
+  }
+  
+  .fv-slider__list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .fv-slider__list--left{
+    will-change: transform;
+    backface-visibility: hidden;
+    animation :infinity-scroll-left 80s infinite linear 0.5s both;
+  }
+  
+  .fv-slider__item {
+    width: calc(100vw / 6);
+    width: 605px;
+    margin: 0 20px;
+
+    @include mq("sp") {
+        width: 320px;
+        margin: 0 8px;
+    }
+  }
+  .fv-slider__item > img{
+    height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     object-fit: cover;
+  }
+  
+/*
+  右から左へ
+----------------------------*/
+@keyframes infinity-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }

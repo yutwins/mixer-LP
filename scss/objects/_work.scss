@@ -1,0 +1,83 @@
+@use "../foundation/global" as *;
+
+.work {
+
+    &-inner {
+        padding-bottom: 46px;
+
+        @include mq("sp") {
+            padding-bottom: 0;
+        }
+    }
+
+    &-title {
+        text-align: center;
+    }
+
+    &-subtitle {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    &-ul {
+        width: 855px;
+        max-width: 100%;
+        margin: 72px auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 60px 0;
+
+        @include mq("sp") {
+            width: 350px;
+            gap: 43px 5.7%;
+        }
+    }
+
+    &-list {
+        width: 33.3%;
+
+        @include mq("sp") {
+            width: 47%;
+            padding-left: 5px;
+        }
+
+        &__container {
+            margin: 0 auto;
+            max-width: 190px;
+        }
+
+        &__icon {
+            width: 72px;
+            height: auto;
+        }
+        &__icon02 {
+            width: 78px;
+        }
+        &__icon04 {
+            width: 83px;
+        }
+
+        &__title {
+            font-weight: 600;
+            margin-top: 13px;
+
+            @include mq("sp") {
+                margin-top: 8px;
+            }
+        }
+
+        &__text {
+            margin-top: 12px;
+            font-size: 13px;
+            line-height: 18px;
+
+            @include mq("sp") {
+                max-width: 100%;
+                margin-top: 14px;
+                font-size: 12px;
+            }
+        }
+    }
+}
