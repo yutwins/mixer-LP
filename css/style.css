@@ -19,8 +19,6 @@ body {
   line-height: 1.5;
   background-color: #0A0E10;
   color: #F2F3EE;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
 }
 
 img {
@@ -573,29 +571,6 @@ p {
 }
 
 /*
-右から左へ
-----------------------------*/
-@-webkit-keyframes infinity-scroll-left {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-@keyframes infinity-scroll-left {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-/*
 IE11対策
 ----------------------------*/
 _:-ms-lang(x)::-ms-backdrop,
@@ -633,6 +608,8 @@ _:-ms-lang(x)::-ms-backdrop,
 
 .fv-slider__list--left {
   will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   -webkit-animation: infinity-scroll-left 80s infinite linear 0.5s both;
           animation: infinity-scroll-left 80s infinite linear 0.5s both;
 }
@@ -657,6 +634,29 @@ _:-ms-lang(x)::-ms-backdrop,
      object-fit: cover;
 }
 
+/*
+  右から左へ
+----------------------------*/
+@-webkit-keyframes infinity-scroll-left {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes infinity-scroll-left {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
 .ex-inner {
   padding-bottom: 70px;
 }

@@ -66,10 +66,10 @@
             <a href="<?php echo esc_url(home_url( '/' )); ?>" class="header-logoArea"><img width="124" height="33" src="<?php echo get_template_directory_uri() ?>/images/Logo-white.png" alt="会社ロゴ" class="header-logoArea__icon"></a>
             <ul class="header-ul">
                 <li class="header-list">
-                    <a class="header-list__item js-ex__btn">導入事例</a>
+                    <a href="<?php echo esc_url(home_url( '/#ex' )); ?>" class="header-list__item js-ex__btn">導入事例</a>
                 </li>
                 <li class="header-list">
-                    <a class="btn whiteBtn header-list__btn js-achievement__btn"><span
+                    <a href="<?php echo esc_url(home_url( '/#contact' )); ?>" class="btn whiteBtn header-list__btn js-achievement__btn"><span
                             class="whiteBtn-text header-list__btn--text">実績を見る</span></a>
                 </li>
             </ul>
