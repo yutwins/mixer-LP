@@ -8,13 +8,13 @@
                     提供する伴走型パートナー
                 </h1>
                 <h1 class="fv-left__title sp-only">
-                    伴走型海外デザインパートナー
+                    伴走型グローバルデザインパートナー
                 </h1>
             </div>
             <div class="fv-right">
                 <h4 class="fv-right__subtitle">まるでグローバルデザイン部署を社内に設置するように、海外のプロデザイナーとスムーズに協働できるサービスです。</h4>
                 <a class="btn blackBtn fv-right__btn js-contact__btn">
-                    <span class="blackBtn-text">問い合わせてみる</span>
+                    <span class="blackBtn-text">資料を請求する</span>
                 </a>
             </div>
         </div>
