@@ -236,7 +236,7 @@
     <section id="contact" class="section contact" aria-labelledby="id">
         <div class="inner contact-inner">
             <div class="contact-left">
-                <h2 id="contact-title" class="section-title contact-title">資料請求</h2>
+                <h2 id="contact-title" class="section-title contact-title">資料を請求する</h2>
                 <h5 class="section-subtitle contact-subtitle">企業のデザインパートナーとして課題解決に向け伴走します。詳細はお気軽にお問い合わせください。</h5>
             </div>
             <div class="contact-right">
