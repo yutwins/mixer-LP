@@ -70,7 +70,7 @@
                 </li>
                 <li class="header-list">
                     <a href="<?php echo esc_url(home_url( '/#contact' )); ?>" class="btn whiteBtn header-list__btn js-achievement__btn"><span
-                            class="whiteBtn-text header-list__btn--text">実績を見る</span></a>
+                            class="whiteBtn-text header-list__btn--text">問い合わせる</span></a>
                 </li>
             </ul>
         <?php else: ?>
@@ -81,7 +81,7 @@
                 </li>
                 <li class="header-list">
                     <a href="<?php echo esc_url(home_url( '/#contact' )); ?>" class="btn whiteBtn header-list__btn js-achievement__btn"><span
-                            class="whiteBtn-text header-list__btn--text">実績を見る</span></a>
+                            class="whiteBtn-text header-list__btn--text">問い合わせる</span></a>
                 </li>
             </ul>
         <?php endif; ?>
