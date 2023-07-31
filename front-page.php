@@ -266,9 +266,9 @@
                         </div>
                     </dl>
                     <dl class="contact-form__dl contact-form__textarea">
-                        <dt class="contact-form__label"><label class="contact-form__labelText" for="your-message">問い合わせたい内容<span class="require-label">*</span></label></dt>
+                        <dt class="contact-form__label"><label class="contact-form__labelText" for="your-message">ご連絡事項</label></dt>
                         <dd class="contact-form__input">
-                            <textarea name="お問い合わせ" id="your-message" placeholder="ご依頼内容の概要や、その他ご相談などをご記入ください" required></textarea>
+                            <textarea name="お問い合わせ" id="your-message" placeholder="ご依頼内容の概要や、その他ご相談などをご記入ください"></textarea>
                         </dd>
                     </dl>
                     <div class="contact-form__submit">
