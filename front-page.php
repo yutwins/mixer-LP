@@ -236,8 +236,8 @@
     <section id="contact" class="section contact" aria-labelledby="id">
         <div class="inner contact-inner">
             <div class="contact-left">
-                <h2 id="contact-title" class="section-title contact-title">お問い合わせ</h2>
-                <h5 class="section-subtitle contact-subtitle">グローバルを目指す企業のパートナーとしてデザイン課題の解決に向け伴走します。まずはお気軽にお問い合わせください。</h5>
+                <h2 id="contact-title" class="section-title contact-title">資料請求</h2>
+                <h5 class="section-subtitle contact-subtitle">企業のデザインパートナーとして課題解決に向け伴走します。詳細はお気軽にお問い合わせください。</h5>
             </div>
             <div class="contact-right">
                 <form class="formrun contact-form" action="https://form.run/api/v1/r/nm99lbxn50mwak6ltnvvl4kc" method="post">
@@ -257,21 +257,16 @@
                     </dl>
                     <dl class="contact-form__dl">
                         <div class="contact-form__row">
-                            <dt class="contact-form__label"><label class="contact-form__labelText" for="your-name">担当者氏名<span
-                                        class="require-label">*</span></label></dt>
-                            <dd class="contact-form__input"><input name="お名前" id="your-name" type="text"
-                                    placeholder="ミクサー太郎" required></dd>
+                            <dt class="contact-form__label"><label class="contact-form__labelText" for="your-name">担当者氏名<span class="require-label">*</span></label></dt>
+                            <dd class="contact-form__input"><input name="お名前" id="your-name" type="text" placeholder="ミクサー太郎" required></dd>
                         </div>
                         <div class="contact-form__row">
-                            <dt class="contact-form__label"><label class="contact-form__labelText" for="your-number">日中連絡可能な電話番号<span
-                                        class="require-label">*</span></label></dt>
-                            <dd class="contact-form__input"><input name="電話番号" id="your-number" type="text"
-                                    placeholder="080-1234-5678" required></dd>
+                            <dt class="contact-form__label"><label class="contact-form__labelText" for="your-number">日中連絡可能な電話番号<span class="require-label">*</span></label></dt>
+                            <dd class="contact-form__input"><input name="電話番号" id="your-number" type="text" placeholder="080-1234-5678" required></dd>
                         </div>
                     </dl>
                     <dl class="contact-form__dl contact-form__textarea">
-                        <dt class="contact-form__label"><label class="contact-form__labelText" for="your-message">お問い合わせ内容<span
-                                    class="require-label">*</span></label></dt>
+                        <dt class="contact-form__label"><label class="contact-form__labelText" for="your-message">問い合わせたい内容<span class="require-label">*</span></label></dt>
                         <dd class="contact-form__input">
                             <textarea name="お問い合わせ" id="your-message" placeholder="ご依頼内容の概要や、その他ご相談などをご記入ください" required></textarea>
                         </dd>
