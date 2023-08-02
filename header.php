@@ -13,19 +13,20 @@
     <meta name="format-detection" content="telephone=no">
 
     <!-- ②SEO対策の補助的措置 -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNZSN98EK5"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-KNZSN98EK5');
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5R9GCZK4');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="google-site-verification" content="rWfvyD3zeNriJsQlbTmSTPzXda7tGhuLllf1JXP3WrY" />
+
     <!-- サイトのタイトル -->
     <title>mixer | グローバルデザインを提供する伴走型パートナー</title>
     <!-- キーワード -->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="mixer,mixer株式会社,ミクサー株式会社,ミクサー,グローバルデザイン">
     <!-- サイトの説明 -->
     <meta name="description" content="まるでグローバルデザイン部署を社内に設置するように、海外のプロデザイナーとスムーズに協働できるスタートアップ向けのデザインサービスです。">
     <!-- 重複するURLを一本化 -->
@@ -57,6 +58,10 @@
 
 <?php if(is_front_page()) : ?>
     <body id="top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R9GCZK4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 <?php else : ?>
     <body>
 <?php endif; ?>
