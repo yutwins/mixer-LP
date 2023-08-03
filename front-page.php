@@ -83,7 +83,7 @@
         </div>
         <!--/fv-slider-->
         <a class="btn blackBtn fv-right__btn fv-right__btn--spOnly js-contact__btn--sp">
-            <span class="blackBtn-text">問い合わせてみる</span>
+            <span class="blackBtn-text">資料を請求する</span>
         </a>
     </section>
     <!-- /.FV -->

@@ -14,7 +14,7 @@
 
 
 
-・single.phpの記事部分全体コード
+<!-- ・single.phpの記事部分全体コード -->
 <!-- <div class="single-steps">
     <div class="single-step">
         <p class="single-step__head">【課題・目的】</p>
